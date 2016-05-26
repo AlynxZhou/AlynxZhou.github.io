@@ -38,14 +38,7 @@ ul, ol {
     }
 }
 
-.Miao h1 {
-    text-align: center;
-    position: relative;
-    top: -10px;
-    opacity: 0;
-}
-
-.Miao h3 {
+.Miao h1 h3 {
     text-align: center;
     position: relative;
     top: -10px;
