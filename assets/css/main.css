@@ -4,7 +4,7 @@
 }
 
 body {
-    font: 16px/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+    font: 16px/1.8 "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
     color: #333;
 }
 
@@ -25,20 +25,27 @@ ul, ol {
     list-style: none;
 }
 
-.vi {
+.Miao {
     position: relative;
     margin: 100px auto 0;
     width: 960px;
 }
 
 @media (max-width: 767px) {
-    .vi {
+    .Miao {
         margin-top: 50px;
         width: auto;
     }
 }
 
-.vi h1 {
+.Miao h1 {
+    text-align: center;
+    position: relative;
+    top: -10px;
+    opacity: 0;
+}
+
+.Miao h3 {
     text-align: center;
     position: relative;
     top: -10px;
@@ -89,13 +96,13 @@ ul, ol {
 
 }
 
-.menu {
+.enter {
     margin-top: 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
 }
 
-.menu a {
+.enter a {
     display: inline-block;
     position: relative;
     margin-left: 10px;
@@ -103,15 +110,15 @@ ul, ol {
     border-bottom: 1px solid #ccc;
 }
 
-.menu a:hover {
+.enter a:hover {
     border-bottom: 1px solid #333;
 }
 
-.menu a:active {
+.enter a:active {
     top: 1px !important;
 }
 
-.menu a:first-child {
+.enter a:first-child {
     margin-left: 0;
 }
 
@@ -148,13 +155,13 @@ ul, ol {
     line-height: 40px;
 }
 
-.relocating {
+/*.relocating {
     opacity: 0;
     color: #ccc;
     font-size: 13px;
     text-align: center;
     transition: all .3s ease;
-}
+}*/
 
 .content {
     display: none;
@@ -176,7 +183,7 @@ ul, ol {
 
 .hidden { display: none; }
 
-.bookmarks ul { padding: 0 15px; }
+/*.bookmarks ul { padding: 0 15px; }
 .bookmarks ul li {
     position: relative;
     margin: 10px 0;
@@ -192,4 +199,4 @@ ul, ol {
     border-radius: 50%;
     left: -13px;
     top: 12px;
-}
+}*/
