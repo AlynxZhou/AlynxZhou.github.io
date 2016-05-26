@@ -69,8 +69,12 @@
             return dfd.promise();
         }
 
-        function animateLocationIcon() {
+        function animateOpposite() {
             $('.location-icon').delay(delay * DELAY_STEP).animate({
+                opacity: 1,
+                top: 0
+            }).promise().done(animationQuote);
+            $('h4').delay(delay * DELAY_STEP).animate({
                 opacity: 1,
                 top: 0
             }).promise().done(animationQuote);
