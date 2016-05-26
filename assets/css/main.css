@@ -38,7 +38,7 @@ ul, ol {
     }
 }
 
-.Miao h1 h3 {
+.Miao h1 {
     text-align: center;
     position: relative;
     top: -10px;
@@ -176,7 +176,7 @@ ul, ol {
 
 .hidden { display: none; }
 
-.bookmarks ul { padding: 0 15px; }
+/*.bookmarks ul { padding: 0 15px; }
 .bookmarks ul li {
     position: relative;
     margin: 10px 0;
@@ -192,4 +192,4 @@ ul, ol {
     border-radius: 50%;
     left: -13px;
     top: 12px;
-}
+}*/
