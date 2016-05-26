@@ -1,3 +1,10 @@
-# robotstxt.org
-
+# robots.txt
 User-agent: *
+Allow: /
+
+Disallow: /assets/vendors/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+#Sitemap: http://sh.sxshax.xyz/sitemap.xml
+#Sitemap: http://sh.sxshax.xyz/baidusitemap.xml
