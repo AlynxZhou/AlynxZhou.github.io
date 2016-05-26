@@ -165,7 +165,8 @@ ul, ol {
 
 .runner {
     position: relative;
-    margin-top: 50px;
+    top: -50px;
+    opacity: 0;
 }
 
 .runner h4 {
