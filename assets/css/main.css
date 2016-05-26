@@ -163,6 +163,17 @@ ul, ol {
     transition: all .3s ease;
 }*/
 
+.runner {
+    position: relative;
+}
+
+.runner h4 {
+    text-align: center;
+    position: relative;
+    top: -10px;
+    opacity: 0;
+}
+
 .content {
     display: none;
     position: relative;
