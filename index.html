@@ -62,8 +62,7 @@
 
             els.each(function (index, el) {
                 delay++;
-                $(el).delay(index * DELAY_STEP)
-                        .animate(animationOptions);
+                $(el).delay(index * DELAY_STEP).animate(animationOptions);
                 (size - 1 === index) && dfd.resolve();
             });
             return dfd.promise();

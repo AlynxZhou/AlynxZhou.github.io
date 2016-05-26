@@ -170,7 +170,7 @@ ul, ol {
 .runner h4 {
     text-align: center;
     position: relative;
-    top: -10px;
+    top: 10px;
     opacity: 0;
 }
 
