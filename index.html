@@ -53,7 +53,7 @@
         $('h3').animate(animationOptions).promise()
         $('.runner').animate(animationOptions).promise()
                 .pipe(animateMain)
-                .pipe(animateLocationIcon);
+                .pipe(animateOpposite);
 
         function animateMain() {
             var dfd = $.Deferred();
@@ -74,11 +74,11 @@
                 opacity: 1,
                 top: 0
             }).promise().done(animationQuote);
-/*            $('h4').delay(delay * DELAY_STEP).animate({
+            $('h4').delay(delay * DELAY_STEP).animate({
                 opacity: 1,
                 top: 0
             }).promise().done(animationQuote);
-*/        }
+        }
 
         function animationQuote() {}
 
