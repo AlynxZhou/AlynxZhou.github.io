@@ -1,96 +1,81 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>请叫我喵 | S-X-ShaX - 喵's Homepage</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>请叫我喵 | S-X-ShaX - 喵's Homepage</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
 </head>
 
 <body>
 <div class="Miao">
-    <div class="header">
-        <h1 style="text-align:center">请叫我喵 | S-X-ShaX</h1>
-		<h3 style="text-align:center">Welcome to 喵's Homepage.</h2>
-        <div class="quote">
-            <p class="quote-text animate-init">回忆是抓不到的月光<br>握紧就变黑暗</p>
-            <p class="quote-author animate-init">《爱情转移》—— 陈奕迅/林夕 词</p>
-        </div>
-    </div>
-    <div class="enter">
-        <a href="http://sh.sxshax.xyz/" class="animate-init"><strong>进入我的博客 -- 请叫我喵's StackHarbor</strong></a>
-    </div>
-    <div class="location">
-        <i class="location-icon"></i>
-        <span class="location-text animate-init">Chaoyang - China</span>
-    </div>
-	<div class="runner">
-		<div id="container">
-   	        <script src="assets/js/runner.js"></script>
-		    <script>
-                 initRunner('#container');
-    		</script>
-	    	<h4 style="text-align:center">↑空格键或触摸小恐龙开始游戏↑</h4>
-	    </div>
-    </div>
-
-<div class="content">
-        <span class="close">close</span>
-    </div>
+  <div class="header">
+	<h1 style="text-align:center">请叫我喵 | S-X-ShaX</h1>
+	<h3 style="text-align:center">Welcome to 喵's Homepage.</h2>
+      <div class="quote">
+		<p class="quote-text animate-init">回忆是抓不到的月光<br>握紧就变黑暗</p>
+		<p class="quote-author animate-init">《爱情转移》—— 陈奕迅/林夕 词</p>
+	  </div>
+  </div>
+  <div class="enter">
+	<a href="http://sh.sxshax.xyz/" class="animate-init"><strong>进入我的博客 -- 请叫我喵's StackHarbor</strong></a>
+  </div>
+  <div class="location">
+	<i class="location-icon"></i>
+	<span class="location-text animate-init">Chaoyang - China</span>
+  </div>
+  <div class="runner">
+	<div id="container">
+   	  <script src="assets/js/runner.js"></script>
+	  <script>
+        initRunner('#container');
+      </script>
+	  <h4 style="text-align:center">↑空格键或触摸小恐龙开始游戏↑</h4>
+	</div>
+  </div>
 </div>
+
 
 <script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
 <script>
-    $(document).ready(function () {
-        var delay = 1;
-        var DELAY_STEP = 200;
-        var animationOptions = { opacity: 1, top: 0};
+  $(document).ready(function () {
+    var delay = 1;
+    var DELAY_STEP = 200;
+    var animationOptions = { opacity: 1, top: 0};
 
-        $('h1').animate(animationOptions).promise()
-        $('h3').animate(animationOptions).promise()
-        $('.runner').animate(animationOptions).promise()
-                .pipe(animateMain)
-                .pipe(animateOpposite);
+    $('h1').animate(animationOptions).promise()
+    $('h3').animate(animationOptions).promise()
+    $('.runner').animate(animationOptions).promise()
+      .pipe(animateMain)
+      .pipe(animateOpposite);
 
-        function animateMain() {
-            var dfd = $.Deferred();
-            var els = $('.animate-init');
-            var size = els.size();
+    function animateMain() {
+      var dfd = $.Deferred();
+      var els = $('.animate-init');
+      var size = els.size();
 
-            els.each(function (index, el) {
-                delay++;
-                $(el).delay(index * DELAY_STEP).animate(animationOptions);
-                (size - 1 === index) && dfd.resolve();
-            });
-            return dfd.promise();
-        }
+      els.each(function (index, el) {
+        delay++;
+        $(el).delay(index * DELAY_STEP).animate(animationOptions);
+        (size - 1 === index) && dfd.resolve();
+      });
+      return dfd.promise();
+    }
 
-        function animateOpposite() {
-            $('.location-icon').delay(delay * DELAY_STEP).animate({
-                opacity: 1,
-                top: 0
-            }).promise().done(animationQuote);
-            $('h4').delay(delay * DELAY_STEP).animate({
-                opacity: 1,
-                top: 0
-            }).promise().done(animationQuote);
-        }
+    function animateOpposite() {
+      $('.location-icon').delay(delay * DELAY_STEP).animate({
+        opacity: 1,
+        top: 0
+      }).promise().done(animationQuote);
+      $('h4').delay(delay * DELAY_STEP).animate({
+        opacity: 1,
+        top: 0
+      }).promise().done(animationQuote);
+    }
 
-        function animationQuote() {}
-
-/*        $(document.body).on('keydown', function (event) {
-            // Press 'b' key
-            if (event.which === 66) {
-                $('.relocate-location').text('Bookmark Page');
-                $('.relocating').css('opacity', 1);
-
-                window.setTimeout(function () {
-                    window.location.href = '/bookmarks.html';
-                }, 1000);
-            }
-        });*/
-    });
+    function animationQuote() {}
+  });
 </script>
 </body>
 </html>
