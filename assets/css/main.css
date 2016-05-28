@@ -4,8 +4,9 @@
 }
 
 body {
-    font: 16px/1.8 "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+    font: 16px/1.8 "Noto Sans", "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
     color: #333;
+	text-shadow: 4px 4px 4px #aaa;
 }
 
 ::selection {
