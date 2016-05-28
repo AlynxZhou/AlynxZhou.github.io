@@ -46,8 +46,8 @@
 
     $('h1').animate(animationOptions).promise()
     $('h3').animate(animationOptions).promise()
-    $('.runner').animate(animationOptions).promise()
       .pipe(animateMain)
+    $('.runner').animate(animationOptions).promise()
       .pipe(animateOpposite);
 
     function animateMain() {
