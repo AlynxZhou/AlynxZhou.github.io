@@ -46,7 +46,6 @@
 
     $('h1').animate(animationOptions).promise()
     $('h3').animate(animationOptions).promise()
-    $('.runner').delay(delay * DELAY_STEP).animate(animationOptions).promise()
       .pipe(animateMain)
       .pipe(animateOpposite);
 
@@ -62,6 +61,8 @@
       });
       return dfd.promise();
     }
+
+    $('.runner').animate(animationOptions).promise()
 
     function animateOpposite() {
       $('.location-icon').delay(delay * DELAY_STEP).animate({
