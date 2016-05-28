@@ -67,6 +67,10 @@
         opacity: 1,
         top: 0
       }).promise().done(animationQuote);
+      $('.runner').delay(delay * DELAY_STEP).animate({
+        opacity: 1,
+        top: 0
+      }).promise().done(animationQuote);
       $('h4').delay(delay * DELAY_STEP).animate({
         opacity: 1,
         top: 0
@@ -75,7 +79,7 @@
 
     function animationQuote() {}
 
-    $('.runner').animate(animationOptions).promise()
+//    $('.runner').animate(animationOptions).promise()
 
   });
 </script>
