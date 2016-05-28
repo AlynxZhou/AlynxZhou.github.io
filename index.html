@@ -62,8 +62,6 @@
       return dfd.promise();
     }
 
-//    $('.runner').animate(animationOptions).promise()
-
     function animateOpposite() {
       $('.location-icon').delay(delay * DELAY_STEP).animate({
         opacity: 1,
@@ -76,6 +74,9 @@
     }
 
     function animationQuote() {}
+
+    $('.runner').animate(animationOptions).promise()
+
   });
 </script>
 </body>
