@@ -122,16 +122,11 @@ ul, ol {
     margin-left: 0;
 }
 
-@media (max-width: 767px) { 
-    .sidebar {
-        padding: 0 40px;
-    }
-}
-
 .location {
-    margin-top: 25px;
+    margin-top: 23px;
     text-align: center;
 }
+
 .location-icon {
     position: relative;
     top: 10px;
@@ -150,14 +145,6 @@ ul, ol {
     line-height: 22px;
 }
 
-/*.relocating {
-    opacity: 0;
-    color: #ccc;
-    font-size: 13px;
-    text-align: center;
-    transition: all .3s ease;
-}*/
-
 .runner {
     position: relative;
     top: -10px;
@@ -171,18 +158,6 @@ ul, ol {
     opacity: 0;
 }
 
-.content {
-    display: none;
-    position: relative;
-    margin-left: 400px;
-}
-
-.close {
-    position: absolute;
-    top: -10px;
-    right: 10px;
-}
-
 .animate-init {
     position: relative;
     top: -10px;
@@ -190,21 +165,3 @@ ul, ol {
 }
 
 .hidden { display: none; }
-
-/*.bookmarks ul { padding: 0 15px; }
-.bookmarks ul li {
-    position: relative;
-    margin: 10px 0;
-    list-style: none;
-}
-
-.bookmarks ul li:before {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: #c9ced1;
-    border-radius: 50%;
-    left: -13px;
-    top: 12px;
-}*/
