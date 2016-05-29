@@ -112,8 +112,8 @@ ul, ol {
     display: inline-block;
     padding: 0 20px;
     font-size: 14px;
-    color: #fff !important;
-    background: #222 !important;
+    color: #222 !important;
+    background: #fff !important;
     border: 2px solid #555;
     text-decoration: none;
     border-radius: 0;
@@ -147,7 +147,7 @@ ul, ol {
     border-bottom: 1px solid #333;
 }
 */
-.enter a:active {
+/*.enter */a:active {
 //    top: 1px !important;
     background: #222 !important;
 }
