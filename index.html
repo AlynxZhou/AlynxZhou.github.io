@@ -23,7 +23,7 @@
 	<a href="http://sh.sxshax.xyz/" class="animate-init"><strong>进入我的博客 -- 请叫我喵's StackHarbor</strong></a>
   </div>
   <div class="location">
-	<i class="location-icon"></i>
+	<i class="location-icon animate-init"></i>
 	<span class="location-text animate-init">Chaoyang - China</span>
   </div>
   <div class="runner animate-init">
@@ -32,7 +32,7 @@
 	  <script>
         initRunner('#container');
       </script>
-	  <h4 style="text-align:center">↑空格键或触摸小恐龙开始游戏↑</h4>
+	  <h4 class="animate-init" style="text-align:center">↑空格键或触摸小恐龙开始游戏↑</h4>
 	</div>
   </div>
 </div>
@@ -46,9 +46,8 @@
     var animationOptions = { opacity: 1, top: 0};
 
     $('.Miao').animate(animationOptions).promise()
-//    $('h3').animate(animationOptions).promise()
       .pipe(animateMain)
-      .pipe(animateOpposite);
+//      .pipe(animateOpposite);
 
     function animateMain() {
       var dfd = $.Deferred();
@@ -63,20 +62,16 @@
       return dfd.promise();
     }
 
-    function animateOpposite() {
+/*    function animateOpposite() {
       $('.location-icon').delay(delay * DELAY_STEP).animate({
         opacity: 1,
         top: 0
       }).promise().done(animationQuote);
-/*      $('.runner').delay(delay * DELAY_STEP).animate({
-        opacity: 1,
-        top: 0
-      }).promise().done(animationQuote);*/
       $('h4').delay(delay * DELAY_STEP).animate({
         opacity: 1,
         top: 0
       }).promise().done(animationQuote);
-    }
+    }*/
 
     function animationQuote() {}
 
