@@ -134,12 +134,13 @@ a {
 /*.enter a:hover {
     border-bottom: 1px solid #333;
 }
-
+*/
 .enter a:active {
-    top: 1px !important;
+//    top: 1px !important;
+    background: #fff;
 }
 
-.enter a:first-child {
+/*.enter a:first-child {
     margin-left: 0;
 }
 */
