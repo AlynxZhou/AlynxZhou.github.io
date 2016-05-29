@@ -117,10 +117,7 @@ ul, ol {
     border: 2px solid #555;
     text-decoration: none;
     border-radius: 0;
-    transition-property: background-color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
+
 }
 
 /*a {
@@ -143,13 +140,18 @@ ul, ol {
     transition-delay: 0s;
 }*/
 
-/*.enter a:hover {
-    border-bottom: 1px solid #333;
+/*.enter */a:hover {
+//    border-bottom: 1px solid #333;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
-*/
+
 /*.enter */a:active {
 //    top: 1px !important;
-    background: #222 !important;
+    color: #fff !important;
+    background: #000 !important;
 }
 
 /*.enter a:first-child {
