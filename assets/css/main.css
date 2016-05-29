@@ -140,7 +140,7 @@ ul, ol {
     transition-delay: 0s;
 }*/
 
-/*.enter */a:hover {
+a:hover {
 //    border-bottom: 1px solid #333;
     transition-property: background-color;
     transition-duration: 0.2s;
@@ -149,8 +149,7 @@ ul, ol {
     background-color: #555 !important;
 }
 
-/*.enter */a:active {
-//    top: 1px !important;
+.enter a:active {
     color: #fff !important;
     background: #000 !important;
 }
