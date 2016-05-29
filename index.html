@@ -26,7 +26,7 @@
 	<i class="location-icon"></i>
 	<span class="location-text animate-init">Chaoyang - China</span>
   </div>
-  <div class="runner">
+  <div class="runner animate-init">
 	<div id="container">
    	  <script src="assets/js/runner.js"></script>
 	  <script>
@@ -45,8 +45,8 @@
     var DELAY_STEP = 200;
     var animationOptions = { opacity: 1, top: 0};
 
-    $('h1').animate(animationOptions).promise()
-    $('h3').animate(animationOptions).promise()
+    $('.Miao').animate(animationOptions).promise()
+//    $('h3').animate(animationOptions).promise()
       .pipe(animateMain)
       .pipe(animateOpposite);
 
@@ -68,10 +68,10 @@
         opacity: 1,
         top: 0
       }).promise().done(animationQuote);
-      $('.runner').delay(delay * DELAY_STEP).animate({
+/*      $('.runner').delay(delay * DELAY_STEP).animate({
         opacity: 1,
         top: 0
-      }).promise().done(animationQuote);
+      }).promise().done(animationQuote);*/
       $('h4').delay(delay * DELAY_STEP).animate({
         opacity: 1,
         top: 0
