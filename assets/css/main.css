@@ -103,12 +103,24 @@ ul, ol {
     font-size: 18px;
 }
 
-.enter a {
-    display: inline-block;
+a {
+/*    display: inline-block;
     position: relative;
     margin-left: 10px;
     text-decoration: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;*/
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    background: #222;
+    border: 2px solid #555;
+    text-decoration: none;
+    border-radius: 0;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
 
 .enter a:hover {
