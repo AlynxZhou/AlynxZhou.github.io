@@ -124,11 +124,11 @@ ul, ol {
 }
 
 /*a {
-/*    display: inline-block;
-    position: relative;
-    margin-left: 10px;
-    text-decoration: none;
-    border-bottom: 1px solid #ccc;*/
+//    display: inline-block;
+//    position: relative;
+//    margin-left: 10px;
+//    text-decoration: none;
+//    border-bottom: 1px solid #ccc;
     display: inline-block;
     padding: 0 20px;
     font-size: 14px;
