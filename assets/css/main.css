@@ -117,26 +117,6 @@ ul, ol {
 
 }
 
-/*a {
-//    display: inline-block;
-//    position: relative;
-//    margin-left: 10px;
-//    text-decoration: none;
-//    border-bottom: 1px solid #ccc;
-    display: inline-block;
-    padding: 0 20px;
-    font-size: 14px;
-    color: #222;
-    background: #fff;
-    border: 2px solid #555;
-    text-decoration: none;
-    border-radius: 0;
-    transition-property: background-color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-}*/
-
 .enter a:hover {
     transition-property: background-color;
     transition-duration: 0.2s;
@@ -180,7 +160,6 @@ ul, ol {
 
 .runner {
     position: relative;
-    border: 1px solid #555;
     top: -10px;
     opacity: 0;
 }
