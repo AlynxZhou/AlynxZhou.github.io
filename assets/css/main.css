@@ -131,7 +131,7 @@ a {
     transition-delay: 0s;
 }
 
-.enter a:hover {
+/*.enter a:hover {
     border-bottom: 1px solid #333;
 }
 
@@ -142,7 +142,7 @@ a {
 .enter a:first-child {
     margin-left: 0;
 }
-
+*/
 .location {
     margin-top: 25px;
     text-align: center;
