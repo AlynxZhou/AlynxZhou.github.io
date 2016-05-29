@@ -114,15 +114,15 @@ ul, ol {
     border: 3px solid #555;
     text-decoration: none;
     border-radius: 0;
-
-}
-
-.enter a:hover {
-    background-color: #555 !important;
     transition-property: background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+}
+
+.enter a:hover {
+
+	background-color: #555 !important;
 }
 
 .enter a:active {
