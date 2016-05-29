@@ -103,15 +103,12 @@ ul, ol {
     font-size: 18px;
 }
 
-/*.enter */a {
-//    color: #555;
-//    font-size: 14px;
-//    background: #fff;
+.enter a {
     border-radius: 2px;
-    line-height: 2;
+    line-height: 3;
     display: inline-block;
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 20px;
     color: #222 !important;
     background: #fff !important;
     border: 2px solid #555;
@@ -140,8 +137,7 @@ ul, ol {
     transition-delay: 0s;
 }*/
 
-a:hover {
-//    border-bottom: 1px solid #333;
+.enter a:hover {
     transition-property: background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -156,8 +152,8 @@ a:hover {
 
 /*.enter a:first-child {
     margin-left: 0;
-}
-*/
+}*/
+
 .location {
     margin-top: 25px;
     text-align: center;
