@@ -103,6 +103,14 @@ ul, ol {
     font-size: 18px;
 }
 
+.enter a {
+    color: #555;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 2px;
+    line-height: 2;
+}
+
 a {
 /*    display: inline-block;
     position: relative;
