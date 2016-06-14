@@ -98,7 +98,6 @@ ul, ol {
 }
 
 .quote-text {
-
 }
 
 .enter {
@@ -133,10 +132,6 @@ ul, ol {
     color: #fff !important;
     background: #000 !important;
 }
-
-/*.enter a:first-child {
-    margin-left: 0;
-}*/
 
 .location {
     margin-top: 25px;
