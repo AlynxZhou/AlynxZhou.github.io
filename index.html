@@ -10,6 +10,7 @@
   </head>
 
   <body>
+	<div class="Miao">
 	  <div class="header">
 		<h1>请叫我喵 | S-X-ShaX</h1>
 		<h3>Welcome to 喵's Homepage.</h3>
@@ -31,10 +32,10 @@
 		  <script>
 			initRunner('#container');
 		  </script>
-		  <h4>↑空格键或触摸小恐龙开始游戏↑</h4>
+		  <h4 class="animate-init">↑空格键或触摸小恐龙开始游戏↑</h4>
 		</div>
 	  </div>
-
+	</div>
 
 	<script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
 	<script>
@@ -43,7 +44,7 @@
         var DELAY_STEP = 200;
         var animationOptions = { opacity: 1, top: 0};
 
-        $('.header').animate(animationOptions).promise().pipe(animateMain);
+        $('.Miao').animate(animationOptions).promise().pipe(animateMain);
 
         function animateMain() {
           var dfd = $.Deferred();
