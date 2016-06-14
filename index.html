@@ -14,12 +14,11 @@
 	  <div class="header">
 		<h1>请叫我喵 | S-X-ShaX</h1>
 		<h3>Welcome to 喵's Homepage.</h3>
+	  </div>
 	  <div class="quote">
 		<p class="quote-text animate-init">回忆是抓不到的月光<br>握紧就变黑暗</p>
 		<p class="quote-author animate-init">《爱情转移》—— 陈奕迅/林夕 词</p>
 	  </div>
-      </div>
-
       <div class="enter">
 		<a href="http://sh.sxshax.xyz/" class="animate-init"><strong>进入我的博客 -- 请叫我喵's StackHarbor</strong></a>
 	  </div>
@@ -45,7 +44,7 @@
         var DELAY_STEP = 200;
         var animationOptions = { opacity: 1, top: 0};
 
-        $('.Miao').animate(animationOptions).promise().pipe(animateMain);
+        $('.header').animate(animationOptions).promise().pipe(animateMain);
 
         function animateMain() {
           var dfd = $.Deferred();

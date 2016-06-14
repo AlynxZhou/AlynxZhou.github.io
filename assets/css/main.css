@@ -168,16 +168,16 @@ ul, ol {
     opacity: 0;
 }
 
-.instruction h4 {
+.runner h4 {
     text-align: center;
     position: relative;
     top: 10px !important;
     opacity: 0;
 }
 
-/*.animate-init {
+.animate-init {
     position: relative;
     top: -10px;
     opacity: 0;
-}*/
+}
 
