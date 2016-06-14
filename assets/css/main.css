@@ -125,6 +125,7 @@ ul, ol {
 }
 
 .enter a:hover {
+    color: #fff !important;
 	background-color: #555 !important;
 }
 
