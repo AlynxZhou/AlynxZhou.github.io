@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-body {
-    font: 16px/1.8 "Noto Sans", "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
-    color: #333;
-	text-shadow: 4px 4px 4px #aaa;
-}
-
 ::selection {
     background: #222;
     color: white;
@@ -26,37 +20,25 @@ ul, ol {
     list-style: none;
 }
 
-.Miao {
+body {
+    font: 16px/1.8 "Noto Sans", "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+    color: #333;
+	text-shadow: 4px 4px 4px #aaa;
     position: relative;
     margin: 50px auto 0;
     width: 960px;
     text-align: center;
     position: relative;
     top: -10px;
-    opacity: 0;
+//   opacity: 0;
 }
 
 @media (max-width: 767px) {
-    .Miao {
+    body {
         margin-top: 30px;
         width: auto;
     }
 }
-
-/*.Miao h1 {
-    text-align: center;
-    position: relative;
-    top: -10px;
-    opacity: 0;
-}
-
-.Miao h3 {
-    text-align: center;
-    position: relative;
-    top: -10px;
-    opacity: 0;
-}*/
-
 .quote {
     position: relative;
     margin: 40px 0;
@@ -166,7 +148,7 @@ ul, ol {
 .runner h4 {
     text-align: center;
     position: relative;
-    top: 10px !important;
+    top: 10px;
     opacity: 0;
 }
 
@@ -175,4 +157,3 @@ ul, ol {
     top: -10px;
     opacity: 0;
 }
-
