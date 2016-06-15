@@ -1,9 +1,9 @@
 {
-  "name": "Vi",
-  "version": "v2015",
-  "homepage": "https://github.com/iissnan/iissnan.github.com",
+  "name": "请叫我喵 | S-X-ShaX",
+  "version": "1.0",
+  "homepage": "http://sxshax.xyz/",
   "authors": [
-    "iissnan <iissnan@gmail.com>"
+    "iissnan <sxshax@gmail.com>"
   ],
   "main": "index.html",
   "private": true,
