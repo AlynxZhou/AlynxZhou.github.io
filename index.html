@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href='http://fonts.useso.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+	<script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
+	<script type="text/javascript" src="assets/js/animate.js"></script>
 	<title>请叫我喵 | S-X-ShaX - 喵's Homepage</title>
   </head>
 
@@ -33,31 +35,5 @@
 	  </div>
 	  <h4 class="animate-init">↑空格键或触摸小恐龙开始游戏↑</h4>
 	</div>
-
-	<script type="text/javascript" src="assets/vendors/jquery/index.js"></script>
-	<script>
-	  $(document).ready(function() {
-        var delay = 1;
-        var DELAY_STEP = 200;
-        var animationOptions = {opacity:1,top:0};
-
-        function animateMain() {
-          var dfd = $.Deferred();
-          var els = $('.animate-init');
-          var size = els.size();
-
-          els.each(function(index,el) {
-            delay++;
-            $(el).delay(index * DELAY_STEP).animate(animationOptions);
-            (size - 1 === index) && dfd.resolve();
-	      });
-
-          return dfd.promise();
-	    }
-
-	    animateMain();
-	  
-	  });
-	</script>
   </body>
 </html>
