@@ -23,7 +23,7 @@ ul, ol {
 body {
     font: 16px/1.8 "Noto Sans", "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
     color: #333;
-	text-shadow: 4px 4px 4px #aaa;
+    text-shadow: 4px 4px 4px #aaa;
     position: relative;
     margin: 50px auto 0;
     width: 960px;
@@ -107,7 +107,7 @@ body {
 
 .enter a:hover {
     color: #fff !important;
-	background-color: #555 !important;
+    background-color: #555 !important;
 }
 
 .enter a:active {
