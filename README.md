@@ -1,4 +1,4 @@
-sxshax.xyz
+alynx.xyz
 =======
 
 There is where 请叫我喵 Alynx storing his website [喵's Homepage](http://alynx.xyz/).
