@@ -6,5 +6,5 @@ Disallow: /assets/vendors/
 Disallow: /assets/js/
 Disallow: /assets/css/
 
-#Sitemap: http://sh.sxshax.xyz/sitemap.xml
-#Sitemap: http://sh.sxshax.xyz/baidusitemap.xml
+#Sitemap: http://alynx.xyz/sitemap.xml
+#Sitemap: http://alynx.xyz/baidusitemap.xml
