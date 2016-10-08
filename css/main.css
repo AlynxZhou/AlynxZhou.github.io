@@ -154,8 +154,9 @@ body {
 
 .cc {
     text-align: center;
+    margin-top: 25px;
     position: relative;
-    top: 10px;
+    top: -10px;
     opacity: 0;
 }
 
