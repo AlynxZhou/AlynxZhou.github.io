@@ -123,6 +123,7 @@ body {
 .location-icon {
     position: relative;
     top: -10px;
+    left: -10px;
     opacity: 0;
     display: inline-block;
     vertical-align: top;
