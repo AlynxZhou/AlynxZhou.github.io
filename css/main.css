@@ -139,6 +139,14 @@ body {
     line-height: 13px;
 }
 
+.cc {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    top: -10px;
+    opacity: 0;
+}
+
 .runner {
     position: relative;
     top: -10px;
@@ -149,14 +157,6 @@ body {
     text-align: center;
     position: relative;
     top: 10px;
-    opacity: 0;
-}
-
-.cc {
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-    top: -10px;
     opacity: 0;
 }
 
