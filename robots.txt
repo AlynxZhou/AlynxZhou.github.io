@@ -2,9 +2,9 @@
 User-agent: *
 Allow: /
 
-Disallow: /assets/vendors/
-Disallow: /assets/js/
-Disallow: /assets/css/
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
 
 #Sitemap: http://alynx.xyz/sitemap.xml
 #Sitemap: http://alynx.xyz/baidusitemap.xml
