@@ -152,6 +152,13 @@ body {
     opacity: 0;
 }
 
+.cc {
+    text-align: center;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
 .animate-init {
     position: relative;
     top: -10px;
