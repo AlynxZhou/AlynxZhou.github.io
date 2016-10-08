@@ -127,3 +127,9 @@ input::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
+
+.cc {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
