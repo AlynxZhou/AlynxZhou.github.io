@@ -17,7 +17,7 @@ p {
 }
 
 ul, ol {
-    list-style: none;
+    //list-style: none;
 }
 
 body {
@@ -98,7 +98,7 @@ body {
     background: #fff !important;
     border: 3px solid #555;
     text-decoration: none;
-    border-radius: 0;
+    border-radius: 5px;
     transition-property: background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -141,9 +141,9 @@ body {
     line-height: 13px;
 }
 
-.cc {
+.spacemacs {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0px;
     position: relative;
     top: -10px;
     opacity: 0;
@@ -151,6 +151,7 @@ body {
 
 .runner {
     position: relative;
+    margin-top: 0px;
     top: -10px;
     opacity: 0;
 }
