@@ -1,6 +1,7 @@
 # robots.txt
 User-agent: *
 Allow: /
+Allow: /tfgiqm/
 
 Disallow: /js/
 Disallow: /css/
