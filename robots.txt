@@ -2,7 +2,6 @@
 User-agent: *
 Allow: /
 
-Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
 
