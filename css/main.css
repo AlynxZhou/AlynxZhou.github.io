@@ -111,7 +111,8 @@ hr {
     margin: 0 5px 0 5px;
     font-size: 18px;
     color: #268 !important;
-    background: #fff !important;
+    /*background: #fff !important;*/
+    background-color: transparent;
     border: 3px solid #555;
     text-decoration: none;
     border-radius: 5px;
