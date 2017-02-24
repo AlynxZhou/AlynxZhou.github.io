@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello World!</title>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        	<link href="http://fonts.css.network/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
+                <style type="text/css" media="screen">
+                        ::-webkit-scrollbar {
+                                width: 10px;
+                                height: 10px
+                        }
+
+                        ::-webkit-scrollbar-track {
+                                background: 0 0
+                        }
+
+                        ::-webkit-scrollbar-thumb {
+                                background-color: #ccc;
+                                border-radius: 5px
+                        }
+
+                        ::-webkit-scrollbar-thumb:hover {
+                                background-color: #666
+                        }
+
+                        ::-webkit-scrollbar-corner {
+                                background-color: #535353
+                        }
+
+                        ::-webkit-scrollbar-resizer {
+                                background-color: #FF6E00
+                        }
+
+                        body ::-webkit-scrollbar {
+                                width: 8px
+                        }
+
+                        body ::-webkit-scrollbar-thumb {
+                                background-color: #ddd
+                        }
+
+                        * {
+        			margin: 0;
+        			padding: 0;
+                        }
+
+                        ::selection {
+        			background: #222;
+        			color: white;
+        		}
+
+                        a {
+        			color: #333;
+        		}
+
+        		p {
+        			margin: 20px 0;
+        		}
+
+        		ul,
+        		ol {
+        			//list-style: none;
+        		}
+
+        		body {
+        			font: 16px/1.8 "Noto Sans", "Noto Sans CJK", "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
+        			color: #333;
+        			text-shadow: 4px 4px 4px #aaa;
+        			position: relative;
+        			margin: 20px auto 20px auto;
+        			width: auto;
+        			text-align: center;
+        			position: relative;
+        			//top: -10px;
+        			//opacity: 0;
+        		}
+
+        		@media (max-width: 767px) {
+        			body {
+        				margin-top: 20px;
+        				width: auto;
+        			}
+        		}
+
+                        hr {
+        			margin: 40px 0;
+        			height: 3px;
+        			border: none;
+        			margin-left: auto;
+        			margin-right: auto;
+        			width: auto;
+        			position: relative;
+        			display: block;
+        			box-sizing: content-box;
+        			background-color: #ddd;
+        			background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+        		}
+
+        		button {
+        			font-size: 20px;
+        			padding: 10px 10px 10px 10px;
+        			margin-bottom: 20px;
+        			text-align: center;
+        		}
+                </style>
+                <script type="text/javascript">
+                        var keyCheck, keySplit, lineNum, parenCheck, parenSplit, scoreRebuild, validArr,
+                        indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+                        validArr = [' ', '\n', '\t', '#', '(', ')', '{', '}', '[', ']', '<', '>', '0', '1', '2', '3', '4', '5', '6', '7', '#1', '#2', '#3', '#4', '#5', '#6', '#7'];
+                        lineNum = 0;
+                        function keySplit(line) {
+                                var i, keyArr;
+                                keyArr = new Array();
+                                i = 0;
+                                while (i < line.length) {
+                                        switch (line[i]) {
+                                                case '#':
+                                                        keyArr.push('#' + line[i + 1]);
+                                                        i++;
+                                                        break;
+                                                case ';':
+                                                        keyArr.push(line.slice(i, +line.length + 1 || 9e9));
+                                                        i = line.length;
+                                                        break;
+                                                default:
+                                                        keyArr.push(line[i]);
+                                        }
+                                        i++;
+                                }
+                                return keyArr;
+                        }
+                        function keyCheck(keyArr) {
+                                var i, j, key, len;
+                                i = 0;
+                                for (j = 0, len = keyArr.length; j < len; j++) {
+                                        key = keyArr[j];
+                                        i += key.length;
+                                        if (indexOf.call(validArr, key) < 0 && key[0] !== ';') {
+                                                throw new Error("Line " + lineNum + ", Colomn " + i + ": Invalid key \'" + key + "\' after automatical key split:\n\n\t" + (keyArr.join('')) + "\n");
+                                        }
+                                }
+                                return keyArr;
+                        }
+                        function parenSplit(keyArr) {
+                                var i, parenArr, tempArr;
+                                parenArr = new Array();
+                                tempArr = new Array();
+                                i = 0;
+                                while (i < keyArr.length) {
+                                        switch (keyArr[i]) {
+                                                case ')':
+                                                        keyArr.unshift('(');
+                                                        i = -1;
+                                                        tempArr = [];
+                                                        break;
+                                                case ']':
+                                                        keyArr.unshift('[');
+                                                        i = -1;
+                                                        tempArr = [];
+                                                        break;
+                                                case '}':
+                                                        keyArr.unshift('{');
+                                                        i = -1;
+                                                        tempArr = [];
+                                                        break;
+                                                case '(':
+                                                        if (tempArr.length) {
+                                                                parenArr.push(tempArr);
+                                                                tempArr = [];
+                                                        }
+                                                        if (keyArr.slice(i, keyArr.length).indexOf(')') !== -1) {
+                                                                parenArr.push(keyArr.slice(i, +keyArr.indexOf(')') + 1 || 9e9));
+                                                                i += keyArr.slice(i, keyArr.length).indexOf(')');
+                                                        } else if (keyArr[keyArr.length - 1] === '\n') {
+                                                                keyArr[keyArr.length - 1] = ')';
+                                                                keyArr.push('\n');
+                                                                parenArr.push(keyArr.slice(i, keyArr.length - 1));
+                                                                i = keyArr.length - 1;
+                                                        } else {
+                                                                keyArr.push(')');
+                                                                parenArr.push(keyArr.slice(i, keyArr.length));
+                                                                i = keyArr.length;
+                                                        }
+                                                        break;
+                                                case '[':
+                                                        if (tempArr.length) {
+                                                                parenArr.push(tempArr);
+                                                                tempArr = [];
+                                                        }
+                                                        if (keyArr.slice(i, keyArr.length).indexOf(']') !== -1) {
+                                                                parenArr.push(keyArr.slice(i, +keyArr.indexOf(']') + 1 || 9e9));
+                                                                i += keyArr.slice(i, keyArr.length).indexOf(']');
+                                                        } else if (keyArr[keyArr.length - 1] === '\n') {
+                                                                keyArr[keyArr.length - 1] = ']';
+                                                                keyArr.push('\n');
+                                                                parenArr.push(keyArr.slice(i, keyArr.length - 1));
+                                                                i = keyArr.length - 1;
+                                                        } else {
+                                                                keyArr.push(']');
+                                                                parenArr.push(keyArr.slice(i, keyArr.length));
+                                                                i = keyArr.length;
+                                                        }
+                                                        break;
+                                                case '{':
+                                                        if (tempArr.length) {
+                                                                parenArr.push(tempArr);
+                                                                tempArr = [];
+                                                        }
+                                                        if (keyArr.slice(i, keyArr.length).indexOf('}') !== -1) {
+                                                                parenArr.push(keyArr.slice(i, +keyArr.indexOf('}') + 1 || 9e9));
+                                                                i += keyArr.slice(i, keyArr.length).indexOf('}');
+                                                        } else if (keyArr[keyArr.length - 1] === '\n') {
+                                                                keyArr[keyArr.length - 1] = '}';
+                                                                keyArr.push('\n');
+                                                                parenArr.push(keyArr.slice(i, keyArr.length - 1));
+                                                                i = keyArr.length - 1;
+                                                        } else {
+                                                                keyArr.push('}');
+                                                                parenArr.push(keyArr.slice(i, keyArr.length));
+                                                                i = keyArr.length;
+                                                        }
+                                                        break;
+                                                default:
+                                                        if (keyArr[i][0] !== ';') {
+                                                                tempArr.push(keyArr[i]);
+                                                        }
+                                        }
+                                        i++;
+                                }
+                                if (tempArr.length) {
+                                        parenArr.push(tempArr);
+                                }
+                                return parenArr;
+                        }
+                        function parenCheck(parenArr) {
+                                var arr, i, j, k, l, len, len1, len2, paren, ref, ref1, str, testArr, x;
+                                i = 0;
+                                for (j = 0, len = parenArr.length; j < len; j++) {
+                                        arr = parenArr[j];
+                                        if ((ref = arr[0]) === '(' || ref === '[' || ref === '{') {
+                                                testArr = arr.slice(1, arr.length - 1);
+                                        } else {
+                                                testArr = arr;
+                                        }
+                                        ref1 = ['(', ')', '[', ']', '{', '}'];
+                                        for (k = 0, len1 = ref1.length; k < len1; k++) {
+                                                paren = ref1[k];
+                                                        if (indexOf.call(testArr, paren) >= 0) {
+                                                                i += testArr.indexOf(paren) + 2;
+                                                                str = '';
+                                                                for (l = 0, len2 = parenArr.length; l < len2; l++) {
+                                                                        x = parenArr[l];
+                                                                        str += x.join('');
+                                                                }
+                                                                throw new Error("Line " + lineNum + ", Colomn " + i + ": Unexpected \'" + paren + "\' after automatical parentheses completion:\n\n\t" + str + "\n");
+                                                        }
+                                        }
+                                        i += arr.join('').length;
+                                }
+                                return parenArr;
+                        }
+                        function scoreRebuild(keyArr) {
+                                var i, rebuildArr, ref, ref1, ref2;
+                                rebuildArr = new Array();
+                                i = 0;
+                                while (i < keyArr.length) {
+                                        switch (keyArr[i]) {
+                                                case '(':
+                                                        i++;
+                                                        while (keyArr[i] !== ')') {
+                                                                if ((ref = keyArr[i]) !== ' ' && ref !== '\n' && ref !== '\t') {
+                                                                        rebuildArr.push('(' + keyArr[i] + ')');
+                                                                } else {
+                                                                        rebuildArr.push(keyArr[i]);
+                                                                }
+                                                                i++;
+                                                        }
+                                                        break;
+                                                case '[':
+                                                        i++;
+                                                        while (keyArr[i] !== ']') {
+                                                                if ((ref1 = keyArr[i]) !== ' ' && ref1 !== '\n' && ref1 !== '\t') {
+                                                                        rebuildArr.push('[' + keyArr[i] + ']');
+                                                                } else {
+                                                                        rebuildArr.push(keyArr[i]);
+                                                                }
+                                                                i++;
+                                                        }
+                                                        break;
+                                                case '{':
+                                                        i++;
+                                                        while (keyArr[i] !== '}') {
+                                                                if ((ref2 = keyArr[i]) !== ' ' && ref2 !== '\n' && ref2 !== '\t') {
+                                                                        rebuildArr.push('{' + keyArr[i] + '}');
+                                                                } else {
+                                                                        rebuildArr.push(keyArr[i]);
+                                                                }
+                                                                i++;
+                                                        }
+                                                        break;
+                                                default:
+                                                        rebuildArr.push(keyArr[i]);
+                                        }
+                                        i++;
+                                }
+                                return rebuildArr.join('');
+                        }
+                        function readline(callback) {
+                                lineNum = 0;
+                                document.getElementById("display").value = '';
+                                var value = document.getElementById("input").value;
+                                var line = '';
+                                var i = 0;
+                                for (i = 0; i < value.length; i++) {
+                                        line += value[i];
+                                        if (value[i] === '\n' || i === value.length - 1) {
+                                                callback(line);
+                                                line = '';
+                                        }
+                                }
+                        }
+                        function interprete(line) {
+                                lineNum++;
+                                try {
+                                        parenCheck(parenSplit(keyCheck(keySplit(line))));
+                                        document.getElementById("display").value += scoreRebuild(keyCheck(keySplit(line)));
+                                } catch (e) {
+                                        alert(e.message);
+                                }
+                        }
+                </script>
+	</head>
+	<body>
+                <div class="header">
+			<h1>请叫我喵的数字谱检查器</h1>
+		</div>
+                <hr>
+                <div class="input">
+                        <h3>在这里输入乐谱：</h3>
+                        <textarea name="input" id="input" rows="10" cols="80"></textarea>
+                </div>
+                <hr>
+                <div class="button">
+                        <button type="button" id="button" name="button" onclick="readline(interprete)">检查并重排</button>
+                </div>
+                <hr>
+                <div class="display">
+                        <h3>在这里获取结果：</h3>
+                        <textarea name="display" id="display" rows="10" cols="80"></textarea>
+                </div>
+                <script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+	</body>
+</html>
