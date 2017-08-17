@@ -13,5 +13,5 @@ else
     git commit -m "Website updated."
 fi
 
-git push -u origin master:gh-pages
-git push -u coding master:coding-pages
+git push -u origin master
+git push -u coding master
