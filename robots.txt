@@ -5,5 +5,5 @@ Allow: /
 Disallow: /js/
 Disallow: /css/
 
-#Sitemap: http://alynx.xyz/sitemap.xml
-#Sitemap: http://alynx.xyz/baidusitemap.xml
+#Sitemap: http://alynx.cat/sitemap.xml
+#Sitemap: http://alynx.cat/baidusitemap.xml
