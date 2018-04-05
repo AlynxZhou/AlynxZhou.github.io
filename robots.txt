@@ -1,9 +1,7 @@
 # robots.txt
 User-agent: *
 Allow: /
-
-Disallow: /js/
-Disallow: /css/
-
+Allow: /js/
+Allow: /css/
 #Sitemap: https://alynx.xyz/sitemap.xml
 #Sitemap: https://alynx.xyz/baidusitemap.xml
