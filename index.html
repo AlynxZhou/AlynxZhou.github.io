@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google-site-verification" content="VmX1m6eF3rZhAf1iR5DhqrbiF_5se-s902W14pPryQk" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#33363b">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <link href="//fonts.css.network/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/flex.css">
     <link rel="stylesheet" type="text/css" href="css/kiana.min.css">
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/animate.js"></script>
@@ -16,49 +23,44 @@
   </head>
 
   <body>
-    <div class="header animate-init">
-      <h1>AlynxZhou</h1>
-      <h3>Welcome to 喵's Homepage</h3>
-    </div>
-    <div class="quote">
-      <p class="quote-text animate-init">回忆是抓不到的月光<br>握紧就变黑暗</p>
-      <p class="quote-author animate-init">《爱情转移》—— 陈奕迅/林夕 词</p>
-    </div>
-    <div class="enter animate-init">
-      <a href="https://sh.alynx.xyz/">点击进入<br><strong>喵's StackHarbor</strong></a>
-    </div>
-    <div class="location">
-      <i class="location-icon animate-init"></i>
-      <span class="location-text animate-init">Beijing, China</span>
-    </div>
-    <div class="runner animate-init">
-      <div id="container">
-        <script src="js/runner.js"></script>
-        <script>initRunner("#container");</script>
+    <main>
+      <div class="header animate-init">
+        <h1>AlynxZhou</h1>
+        <h3>Welcome to 喵's Homepage</h3>
       </div>
-      <h4 class="animate-init">↑空格键或触摸小恐龙开始游戏↑</h4>
-    </div>
-    <div class="host animate-init">
-      <p>
-        Hosted by <a href="https://pages.github.com" style="font-weight: bold">GitHub Pages</a>
-      </p>
-<!--
-      <p>
-        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-      </p>
--->
-    </div>
-<!--
-    <div id="kiana"></div>
-    <script type="text/javascript" src="js/kiana.min.js"></script>
-    <script type="text/javascript">
-    $("#kiana").KianaInit({
-      randomPosition:true
-    });
-    </script>
--->
-<!--
-    <script type="text/javascript" color="0,0,0" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
--->
+      <!-- <div class="quote">
+        <p class="quote-text animate-init">回忆是抓不到的月光<br>握紧就变黑暗</p>
+        <p class="quote-author animate-init">《爱情转移》—— 陈奕迅/林夕 词</p>
+      </div> -->
+      <div class="hero-logo animate-init">
+        <img class="hero-logo-circle" src="images/portal/index-portal-red-semi-085b4e44d49b2ffe935cc1b2b3094ce8.svg" alt="Index portal red semi">
+        <img class="hero-logo-circle" src="images/portal/index-portal-red-be5d1b8a52c13bf286560aba3e4c8c30.svg" alt="Index portal red">
+        <img class="hero-logo-circle" src="images/portal/index-portal-orange-semi-d2010f0f8e41e03dbf2b5c52166abe4b.svg" alt="Index portal orange semi">
+        <img class="hero-logo-circle" src="images/portal/index-portal-orange-b3bddfb758b91d22f43d0e14ed8e29da.svg" alt="Index portal orange">
+        <img class="hero-logo-circle" src="images/portal/index-portal-yellow-semi-545681fe77ff01659d472bd379a9f38b.svg" alt="Index portal yellow semi">
+        <img class="hero-logo-circle" src="images/portal/index-portal-yellow-ff207a58ad4f450ea9ac0e17224b39f1.svg" alt="Index portal yellow">
+        <img class="hero-logo-circle" src="images/portal/index-portal-green-semi-2d5bc571ee90e710d93f7ae7ddd06e85.svg" alt="Index portal green semi">
+        <img class="hero-logo-circle" src="images/portal/index-portal-green-6ab85a1e7343a232273868031b242806.svg" alt="Index portal green">
+        <img class="hero-logo-circle" src="images/portal/index-portal-blue-semi-7333f1323549be50644411b691b173dd.svg" alt="Index portal blue semi">
+        <img class="hero-logo-circle" src="images/portal/index-portal-blue-92fc2c151190795bd0147c03d4fb8352.svg" alt="Index portal blue">
+        <a class="hero-logo-link" href="https://sh.alynx.xyz/">点击进入<br><strong>喵's StackHarbor</strong></a>
+      </div>
+      <div class="location">
+        <i class="location-icon animate-init"></i>
+        <span class="location-text animate-init">Beijing, China</span>
+      </div>
+      <!-- <div class="runner animate-init">
+        <div id="container">
+          <script src="js/runner.js"></script>
+          <script>initRunner("#container");</script>
+        </div>
+        <h4 class="animate-init">↑空格键或触摸小恐龙开始游戏↑</h4>
+      </div> -->
+      <div class="host animate-init">
+        <p>
+          Hosted by <a href="https://pages.github.com" style="font-weight: bold">GitHub Pages</a>
+        </p>
+      </div>
+    </main>
   </body>
 </html>
