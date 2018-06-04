@@ -16,4 +16,4 @@ fi
 git push -u origin master
 git push -u coding master
 
-rsync -azvr --exclude=.git --exclude=.gitignore --exclude=.nojekyll --delete . alynx@198.13.41.4:alynx.xyz
+rsync -azvr --exclude=.git --exclude=.gitignore --exclude=.nojekyll --delete . alynx@198.13.41.4:~/alynx.xyz/
