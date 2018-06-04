@@ -1,9 +1,9 @@
 #!/bin/bash
 #-*- coding: utf-8 -*-
 
-### Filename: push.sh
-## Created by 请叫我喵 | S-X-ShaX
-# alynx.zhou@gmail.com, http://sxshax.xyz/
+# Filename: push.sh
+# Created by AlynxZhou
+# alynx.zhou@gmail.com, http://alynx.xyz/
 
 git add .
 
@@ -15,3 +15,5 @@ fi
 
 git push -u origin master
 git push -u coding master
+
+rsync -azvr --exclude=.git --exclude=.gitignore --exclude=.nojekyll --delete . alynx@198.13.41.4:alynx.xyz
