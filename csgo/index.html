@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google-site-verification" content="VmX1m6eF3rZhAf1iR5DhqrbiF_5se-s902W14pPryQk" />
     <meta name="theme-color" content="#33363b">
@@ -74,16 +74,16 @@
       top: 0.1em;
     }
     </style>
-		<title>AlynxZhou 的 CS: GO 配置</title>
-	</head>
-	<body>
+    <title>AlynxZhou 的 CS: GO 配置</title>
+  </head>
+  <body>
     <header class="header animate">
       <h1>AlynxZhou 的 CS: GO 配置</h1>
     </header>
     <main class="main animate">
       <h2>使用方法</h2>
       <p>
-        下载下面的 <code>alynx-autoexec.cfg</code> 和 <code>alynx-video.txt</code> 到 <code>Steam 安装目录/userdata/你的 steam ID/730/local/cfg/</code>。
+        下载下面的 <code>alynx.cfg</code> 和 <code>video.txt</code> 中你需要的文件到 <code>Steam 安装目录/userdata/你的 steam ID/730/local/cfg/</code>。
       </p>
       <ul>
         <li>Windows 一般是 <code>C:\Program Files (x86)\Steam\userdata\你的 steam ID\730\local\cfg\</code>。</li>
@@ -91,22 +91,22 @@
         <li>CS: GO 国服启动器的安装位置一般是 <code>C:\Program Files (x86)\CSGO\userdata\你的 steam ID\730\local\cfg\</code>。</li>
       </ul>
       <p>
-        然后编辑 CS: GO 的启动参数，增加 <code>+exec alynx-autoexec +exec alynx-video</code> 两项到最后。我的参数是 <code>-no-broswer -nojoy -novid -preload -high -panorama -tickrate 128 -language english +exec alynx-autoexec +exec alynx-video</code>。你也可以在 <code>alynx-autoexec.cfg</code> 开头的两个 <code>//</code> 之间找到它。
+        然后编辑 CS: GO 的启动参数，增加 <code>+exec alynx</code> 到最后。我的参数是 <code>-no-broswer -nojoy -novid -preload -high -panorama -tickrate 128 -language english +exec alynx</code>。你也可以在 <code>alynx.cfg</code> 开头的两个 <code>//</code> 之间找到它。
       </p>
       <hr>
-      <h2><a href="alynx-autoexec.cfg" target="_blank"><code>alynx-autoexec.cfg</code>（右键“链接另存为”）</a></h2>
+      <h2>游戏配置：<a href="alynx.cfg" target="_blank"><code>alynx.cfg</code>（右键“链接另存为”）</a></h2>
       <p>
         部分配置说明。
       </p>
       <ul>
         <li>使用红色经典静态准星，开启 T 型准星和中心点。</li>
-        <li>关闭了可能打扰游戏的音乐音量，只开启了 MVP 音量。</li>
+        <li>关闭了可能打扰游戏的各种音乐音量，只开启了 MVP 音量。</li>
         <li>限制最大帧数为 144 FPS。开启了帧数和网络状况显示。</li>
         <li>绑定鼠标侧键后退键（MOUSE4）为语音，前进键（MOUSE5）为清除血迹。鼠标中键（滚轮按下）切换左右手持枪。</li>
-        <li>关闭游戏指导提示、使用键开启购买菜单和自动切换到捡起的武器，开启了显示队友装备信息。</li>
+        <li>关闭“游戏指导提示”、“使用键开启购买菜单”和“自动切换为捡起的武器”，开启了“显示队友装备信息”。</li>
       </ul>
       <hr>
-      <h2><a href="alynx-video.txt" target="_blank"><code>alynx-video.txt</code>（右键“链接另存为”）</a></h2>
+      <h2>视频设置：<a href="video.txt" target="_blank"><code>video.txt</code>（右键“链接另存为”）</a></h2>
       <p>
         分辨率 <code>1920x1080</code>，画质设置参见下图。
       </p>
@@ -119,5 +119,5 @@
         Hosted by <a href="https://pages.github.com" style="font-weight: bold">GitHub Pages</a>
       </p>
     </footer>
-	</body>
+  </body>
 </html>
