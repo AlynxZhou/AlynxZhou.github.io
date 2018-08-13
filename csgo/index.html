@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google-site-verification" content="VmX1m6eF3rZhAf1iR5DhqrbiF_5se-s902W14pPryQk" />
     <meta name="theme-color" content="#33363b">
@@ -13,12 +13,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
     <link rel="manifest" href="/favicons/site.webmanifest">
-    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <link href="//fonts.css.network/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/css/flex.css">
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/animate.js"></script>
     <style type="text/css">
+    main p, ul {
+      text-align: left;
+    }
     hr {
       height: 0.3em;
       border: none;
@@ -71,50 +74,50 @@
       top: 0.1em;
     }
     </style>
-    <title>AlynxZhou - 喵's Homepage</title>
-  </head>
-
-  <body>
-    <main>
-      <header class="header animate">
-        <h1>AlynxZhou</h1>
-        <h3>Welcome to 喵's Homepage</h3>
-      </header>
-      <main class="main">
-        <div class="hero-logo animate">
-          <img class="hero-logo-circle" src="images/portal/index-portal-red-semi-085b4e44d49b2ffe935cc1b2b3094ce8.svg" alt="Index portal red semi">
-          <img class="hero-logo-circle" src="images/portal/index-portal-red-be5d1b8a52c13bf286560aba3e4c8c30.svg" alt="Index portal red">
-          <img class="hero-logo-circle" src="images/portal/index-portal-orange-semi-d2010f0f8e41e03dbf2b5c52166abe4b.svg" alt="Index portal orange semi">
-          <img class="hero-logo-circle" src="images/portal/index-portal-orange-b3bddfb758b91d22f43d0e14ed8e29da.svg" alt="Index portal orange">
-          <img class="hero-logo-circle" src="images/portal/index-portal-yellow-semi-545681fe77ff01659d472bd379a9f38b.svg" alt="Index portal yellow semi">
-          <img class="hero-logo-circle" src="images/portal/index-portal-yellow-ff207a58ad4f450ea9ac0e17224b39f1.svg" alt="Index portal yellow">
-          <img class="hero-logo-circle" src="images/portal/index-portal-green-semi-2d5bc571ee90e710d93f7ae7ddd06e85.svg" alt="Index portal green semi">
-          <img class="hero-logo-circle" src="images/portal/index-portal-green-6ab85a1e7343a232273868031b242806.svg" alt="Index portal green">
-          <img class="hero-logo-circle" src="images/portal/index-portal-blue-semi-7333f1323549be50644411b691b173dd.svg" alt="Index portal blue semi">
-          <img class="hero-logo-circle" src="images/portal/index-portal-blue-92fc2c151190795bd0147c03d4fb8352.svg" alt="Index portal blue">
-          <a class="hero-logo-link" href="https://sh.alynx.xyz/">点击进入<br><strong>喵's StackHarbor</strong></a>
-        </div>
-        <div class="location">
-          <i class="location-icon animate"></i>
-          <span class="location-text animate">Beijing, China</span>
-        </div>
-        <hr>
-        <div class="csgo-link animate">
-          <h3><a href="csgo/">我的 CS: GO 配置</a></h3>
-        </div>
-        <!-- <div class="runner animate">
-          <div id="container">
-            <script src="js/runner.js"></script>
-            <script>initRunner("#container");</script>
-          </div>
-          <h4 class="animate">↑空格键或触摸小恐龙开始游戏↑</h4>
-        </div> -->
-      </main>
-      <footer class="footer host animate">
-        <p>
-          Hosted by <a href="https://pages.github.com" style="font-weight: bold">GitHub Pages</a>
-        </p>
-      </div>
+		<title>AlynxZhou 的 CS: GO 配置</title>
+	</head>
+	<body>
+    <header class="header animate">
+      <h1>AlynxZhou 的 CS: GO 配置</h1>
+    </header>
+    <main class="main animate">
+      <h2>使用方法</h2>
+      <p>
+        下载下面的 <code>alynx-autoexec.cfg</code> 和 <code>alynx-video.txt</code> 到 <code>Steam 安装目录/userdata/你的 steam ID/730/local/cfg/</code>。
+      </p>
+      <ul>
+        <li>Windows 一般是 <code>C:\Program Files (x86)\Steam\userdata\你的 steam ID\730\local\cfg\</code>。</li>
+        <li>Linux / macOS 一般是 <code>~/.local/share/Steam/userdata/你的 steam ID/730/local/cfg/</code>。</li>
+        <li>CS: GO 国服启动器的安装位置一般是 <code>C:\Program Files (x86)\CSGO\userdata\你的 steam ID\730\local\cfg\</code>。</li>
+      </ul>
+      <p>
+        然后编辑 CS: GO 的启动参数，增加 <code>+exec alynx-autoexec +exec alynx-video</code> 两项到最后。我的参数是 <code>-no-broswer -nojoy -novid -preload -high -panorama -tickrate 128 -language english +exec alynx-autoexec +exec alynx-video</code>。你也可以在 <code>alynx-autoexec.cfg</code> 开头的两个 <code>//</code> 之间找到它。
+      </p>
+      <hr>
+      <h2><a href="alynx-autoexec.cfg" target="_blank"><code>alynx-autoexec.cfg</code>（右键“链接另存为”）</a></h2>
+      <p>
+        部分配置说明。
+      </p>
+      <ul>
+        <li>使用红色经典静态准星，开启 T 型准星和中心点。</li>
+        <li>关闭了可能打扰游戏的音乐音量，只开启了 MVP 音量。</li>
+        <li>限制最大帧数为 144 FPS。开启了帧数和网络状况显示。</li>
+        <li>绑定鼠标侧键后退键（MOUSE4）为语音，前进键（MOUSE5）为清除血迹。鼠标中键（滚轮按下）切换左右手持枪。</li>
+        <li>关闭游戏指导提示、使用键开启购买菜单和自动切换到捡起的武器，开启了显示队友装备信息。</li>
+      </ul>
+      <hr>
+      <h2><a href="alynx-video.txt" target="_blank"><code>alynx-video.txt</code>（右键“链接另存为”）</a></h2>
+      <p>
+        分辨率 <code>1920x1080</code>，画质设置参见下图。
+      </p>
+      <p>
+        <img src="alynx-video-settings.jpg" alt="alynx-video-settings.jpg">
+      </p>
     </main>
-  </body>
+    <footer class="footer host animate">
+      <p>
+        Hosted by <a href="https://pages.github.com" style="font-weight: bold">GitHub Pages</a>
+      </p>
+    </footer>
+	</body>
 </html>

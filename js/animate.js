@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     function animateMain() {
         var dfd = $.Deferred();
-        var els = $(".animate-init");
+        var els = $(".animate");
         var length = els.length;
 
         els.each(function(index, el) {

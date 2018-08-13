@@ -9,11 +9,42 @@
 }
 
 a {
-  color: #333;
+  position: relative;
+  color: #666;
+  text-decoration: none;
+  border-bottom: 0.05em dotted #666;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-p {
-  margin: 1em 0;
+a:hover {
+  color: #006bde;
+  border-bottom: 0.05em solid #006bde;
+}
+
+a:active {
+  top: 0.1em;
+}
+
+code {
+  text-shadow: none;
+  margin: 0.05em 0.05em;
+  color: #fc6423;
+  padding: 0.125em 0.25em;
+  overflow: auto;
+  word-wrap: break-word;
+  border-radius: 0.2em;
+  font-family: "Monaco for Powerline", Monaco, Menlo, Consolas, monospace;
+  font-size: 1em;
+  background: #f8f8f8;
+  -webkit-font-feature-settings: "liga" 0;
+  -moz-font-feature-settings: "liga=0";
+  -moz-font-feature-settings: "liga" 0;
+  -moz-font-feature-settings: "liga" 0;
+  font-feature-settings: "liga" 0;
 }
 
 body {
@@ -51,17 +82,20 @@ main {
 }
 
 hr {
-  margin: 2em 0;
-  height: 0.2em;
+  height: 0.3em;
   border: none;
-  margin-left:auto;
-  margin-right:auto;
-  width: auto;
+  margin: 2em 0;
+  width: 100%;
   position: relative;
   display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
-  background-color: #ddd;
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 0.25em, transparent 0.25em, transparent 0.25em);
+  background: -webkit-repeating-linear-gradient(135deg, #ccc, #ccc 0.25em, transparent 0.25em, transparent 0.5em);
+  background: -moz-repeating-linear-gradient(135deg, #ccc, #ccc 0.25em, transparent 0.25em, transparent 0.5em);
+  background: -o-repeating-linear-gradient(135deg, #ccc, #ccc 0.25em, transparent 0.25em, transparent 0.5em);
+  background: -ms-repeating-linear-gradient(135deg, #ccc, #ccc 0.25em, transparent 0.25em, transparent 0.5em);
+  background: repeating-linear-gradient(-45deg, #ccc, #ccc 0.25em, transparent 0.25em, transparent 0.5em);
 }
 
 .location {
@@ -89,7 +123,7 @@ hr {
   line-height: 1em;
 }
 
-.animate-init {
+.animate {
   position: relative;
   top: -0.6em;
   opacity: 0;
