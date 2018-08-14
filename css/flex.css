@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 ::selection {
   background: #222;
   color: white;
@@ -52,10 +47,10 @@ body {
   color: #333;
   text-shadow: 4px 4px 4px #aaa;
   position: relative;
-  width: 60em;
   margin: auto;
   text-align: center;
   position: relative;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -64,8 +59,16 @@ body {
 }
 
 main {
-  margin: 1em;
+  flex: 1 0 auto;
+}
+
+header, footer {
+  flex: none;
+}
+
+main {
   display: flex;
+  width: 80%;
   height: 100%;
   flex: 1 0 auto;
   align-items: center;
@@ -73,12 +76,8 @@ main {
   flex-direction: column;
 }
 
-@media (max-width: 48em) {
-  body {
-    /* margin-top: 20px; */
-    margin: auto;
-    width: auto;
-  }
+img {
+  width: 100%;
 }
 
 hr {
@@ -127,87 +126,4 @@ hr {
   position: relative;
   top: -0.6em;
   opacity: 0;
-}
-
-.hero-logo {
-  width: 366px;
-  height: 366px;
-  margin: auto;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  position: relative;
-  text-align: center;
-}
-
-@keyframes hero-logo-circle {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-.hero-logo-link {
-  position: relative;
-  display: block;
-  top: 36%;
-  text-align: center;
-  font-size: 1.4em;
-  line-height: 2;
-  color: #000;
-  background-color: transparent;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: 0.2s ease-in-out;
-}
-
-.hero-logo-link:hover {
-  color: #006bde;
-  border-bottom: .05em dotted #006bde
-}
-
-.hero-logo-circle {
-  position: absolute;
-  left: 0;
-  top: 0;
-  animation: hero-logo-circle 1s linear infinite;
-  will-change: transform;
-}
-
-.hero-logo-circle:nth-child(1) {
-  animation-duration: 30s;
-}
-
-.hero-logo-circle:nth-child(2) {
-  animation-duration: 40s;
-}
-
-.hero-logo-circle:nth-child(3) {
-  animation-duration: 50s;
-}
-
-.hero-logo-circle:nth-child(4) {
-  animation-duration: 60s;
-}
-
-.hero-logo-circle:nth-child(5) {
-  animation-duration: 70s;
-}
-
-.hero-logo-circle:nth-child(6) {
-  animation-duration: 80s;
-}
-
-.hero-logo-circle:nth-child(7) {
-  animation-duration: 90s;
-}
-
-.hero-logo-circle:nth-child(8) {
-  animation-duration: 100s;
-}
-
-.hero-logo-circle:nth-child(9) {
-  animation-duration: 110s;
-}
-
-.hero-logo-circle:nth-child(10) {
-  animation-duration: 120s;
 }

@@ -1,0 +1,71 @@
+.portal {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 30em;
+  margin: 3em auto;
+  text-align: center;
+}
+@keyframes portal-loop {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.portal-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 38%;
+  left: 0;
+  text-align: center;
+  font-size: 150%;
+  line-height: 2;
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 50%;
+  border-bottom: 0.05em dotted #000000;
+  transition: 0.2s ease-in-out;
+}
+.portal-link:hover {
+  color: #006bde;
+  border-bottom: 0.05em solid #006bde;
+}
+.portal-circle {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  animation: portal-loop 1s linear infinite;
+  will-change: transform;
+}
+.portal-circle:nth-child(1) {
+  animation-duration: 30s;
+}
+.portal-circle:nth-child(2) {
+  animation-duration: 40s;
+}
+.portal-circle:nth-child(3) {
+  animation-duration: 50s;
+}
+.portal-circle:nth-child(4) {
+  animation-duration: 60s;
+}
+.portal-circle:nth-child(5) {
+  animation-duration: 70s;
+}
+.portal-circle:nth-child(6) {
+  animation-duration: 80s;
+}
+.portal-circle:nth-child(7) {
+  animation-duration: 90s;
+}
+.portal-circle:nth-child(8) {
+  animation-duration: 100s;
+}
+.portal-circle:nth-child(9) {
+  animation-duration: 110s;
+}
+.portal-circle:nth-child(10) {
+  animation-duration: 120s;
+}
