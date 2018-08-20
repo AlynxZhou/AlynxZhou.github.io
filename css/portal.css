@@ -25,7 +25,6 @@
   text-decoration: none;
   border-radius: 50%;
   border-bottom: 0.05em dotted #000000;
-  transition: 0.2s ease-in-out;
 }
 .portal-link:hover {
   color: #006bde;
