@@ -3,5 +3,4 @@ User-agent: *
 Allow: /
 Allow: /js/
 Allow: /css/
-#Sitemap: https://alynx.xyz/sitemap.xml
-#Sitemap: https://alynx.xyz/baidusitemap.xml
+#Sitemap: https://alynx.moe/sitemap.xml
