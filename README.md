@@ -1,4 +1,4 @@
-alynx.xyz
+alynx.moe
 =========
 
 There is where AlynxZhou storing his website [喵's Homepage](http://alynx.moe/).
