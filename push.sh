@@ -15,4 +15,4 @@ fi
 
 git push -u origin master
 
-rsync -azv --exclude=.git --exclude=.gitignore --exclude=.nojekyll --delete . alynx@172.105.212.166:~/alynx.xyz/
+#rsync -azv --exclude=.git --exclude=.gitignore --exclude=.nojekyll --delete . alynx@172.105.212.166:~/alynx.xyz/
