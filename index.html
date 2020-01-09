@@ -72,6 +72,12 @@
     a:active {
       top: 0.1em;
     }
+    a.portal-link {
+      border-bottom: none;
+    }
+    a.portal-link:hover {
+      border-bottom: none;
+    }
     </style>
     <title>AlynxZhou - 喵's Homepage</title>
   </head>
@@ -95,7 +101,13 @@
         <img class="portal-circle" src="images/portal/portal-blue.svg" alt="portal blue">
         <!-- Use a transparent background to keep the size of portal! -->
         <img class="portal-circle-background" src="images/portal/portal-transparent.svg" alt="portal transparent">
-        <a class="portal-link" href="https://sh.alynx.moe/">点击进入<br><strong>喵's StackHarbor</strong></a>
+        <div class="portal-inner">
+          <a class="portal-link" href="https://sh.alynx.moe/">
+            点击进入
+            <br>
+            <strong>喵's StackHarbor</strong>
+          </a>
+        </div>
       </div>
       <div class="location">
         <i class="location-icon animate"></i>

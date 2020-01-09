@@ -11,7 +11,7 @@
     transform: rotate(1turn);
   }
 }
-.portal-link {
+.portal-inner {
   position: absolute;
   display: block;
   width: 100%;
@@ -20,15 +20,9 @@
   text-align: center;
   font-size: 150%;
   line-height: 2;
-  color: #000000;
   background-color: transparent;
-  text-decoration: none;
   border-radius: 50%;
   border-bottom: 0.05em dotted #000000;
-}
-.portal-link:hover {
-  color: #006bde;
-  border-bottom: 0.05em solid #006bde;
 }
 .portal-circle {
   position: absolute;
