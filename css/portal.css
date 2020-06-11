@@ -2,7 +2,7 @@
  * We make images absolute, which will locate relative to its nearesr
  * non-static parent element, so we set `position: relative;` here.
  */
-.portal {
+div.portal {
   position: relative;
   display: block;
   width: 100%;
@@ -17,7 +17,7 @@
  * if you have more or less lines inside portal,
  * or you changed text size or line height.
  */
-.portal-inner {
+div.portal-inner {
   position: absolute;
   display: block;
   width: 100%;
@@ -30,7 +30,7 @@
  * Add a circular dash line in center,
  * we take 20% as height so add a 40% top offset to keep it center.
  */
-.portal-dots {
+div.portal-dots {
   position: absolute;
   display: block;
   width: 100%;
@@ -45,7 +45,7 @@
  * Circles are all center and in the same size,
  * so use `position: absolute;` with `top: 0;` to make them overlapping.
  */
-.portal-circle {
+img.portal-circle {
   position: absolute;
   display: block;
   width: 100%;
@@ -54,33 +54,33 @@
   animation: portal-loop 1s linear infinite;
   will-change: transform;
 }
-.portal-circle:nth-child(1) {
+img.portal-circle:nth-child(1) {
   animation-duration: 10s;
 }
-.portal-circle:nth-child(2) {
+img.portal-circle:nth-child(2) {
   animation-duration: 20s;
 }
-.portal-circle:nth-child(3) {
+img.portal-circle:nth-child(3) {
   animation-duration: 30s;
 }
-.portal-circle:nth-child(4) {
+img.portal-circle:nth-child(4) {
   animation-duration: 40s;
 }
-.portal-circle:nth-child(5) {
+img.portal-circle:nth-child(5) {
   animation-duration: 50s;
 }
-.portal-circle:nth-child(6) {
+img.portal-circle:nth-child(6) {
   animation-duration: 60s;
 }
-.portal-circle:nth-child(7) {
+img.portal-circle:nth-child(7) {
   animation-duration: 70s;
 }
-.portal-circle:nth-child(8) {
+img.portal-circle:nth-child(8) {
   animation-duration: 80s;
 }
-.portal-circle:nth-child(9) {
+img.portal-circle:nth-child(9) {
   animation-duration: 90s;
 }
-.portal-circle:nth-child(10) {
+img.portal-circle:nth-child(10) {
   animation-duration: 100s;
 }
